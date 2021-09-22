@@ -11,11 +11,7 @@ class CounterViewModel: ViewModel() {
     val state: LiveData<CounterState>
         get() = mutableState
 
-    fun incrementCounter() {
-        mutableState.value = CounterState(mutableState.value!!.counter + 1)
-    }
-
-    fun decrementCounter() {
-        mutableState.value = CounterState(mutableState.value!!.counter - 1)
+    fun setData(data: Int) {
+        mutableState.value = CounterState(data)
     }
 }

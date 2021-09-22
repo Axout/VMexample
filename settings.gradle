@@ -1,0 +1,2 @@
+rootProject.name = "VMexample"
+include ':app'
